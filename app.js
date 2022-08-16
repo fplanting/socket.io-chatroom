@@ -28,7 +28,7 @@ app.use(express.static(path.join(__dirname, "public")));
 //app.use("/", indexRouter);
 //app.use("/users", usersRouter);
 
-BotName = "ChatCord Bot";
+BotName = "ChatRoom Bot";
 
 // Run when client connects
 io.on("connection", (socket) => {
@@ -38,7 +38,7 @@ io.on("connection", (socket) => {
     socket.join(user.room);
 
     // welcome message for the user who connects
-    socket.emit("message", formatMessage(BotName, "Welcome to ChatCord!"));
+    socket.emit("message", formatMessage(BotName, "Welcome to ChatRoom!"));
 
     //message for everyone in chat when new user connects
     socket.broadcast
