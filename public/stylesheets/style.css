@@ -2,10 +2,10 @@
 
 :root {
   --dark-color-a: #d89830;
-  --dark-color-b: #deb667;
+  --dark-color-b: #dea967;
   --light-color: #fff9e6;
   --success-color: #5cb85c;
-  --error-color: #d9534f;
+  --error-color: #e9720a;
 }
 
 * {
